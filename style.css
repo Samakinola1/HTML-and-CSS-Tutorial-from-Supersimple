@@ -142,9 +142,66 @@ body{
     margin-right: 10px;
 }
 
+.search-button, 
+.voice-search-button,
+.upload-container,
+.youtube-apps-icons-container,
+.notifications-icons-container{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;/*Centers Horizontally*/
+    align-items: center;/*Centers Vertically*/
+}
+
+.search-button .tooltip, 
+.voice-search-button .tooltip,
+.upload-container .tooltip,
+.youtube-apps-icons-container .tooltip,
+.notifications-icons-container .tooltip{
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;/*This disables the effect when u hover over the tooltip*/
+    white-space: nowrap;/*This prevents the text from wrapping around*/
+}
+
+.search-button .tooltip, 
+.voice-search-button .tooltip{
+    bottom: -30px;
+}
+
+.upload-container .tooltip,
+.youtube-apps-icons-container .tooltip,
+.notifications-icons-container .tooltip{
+    bottom: -37px;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.youtube-apps-icons-container:hover .tooltip,
+.notifications-icons-container:hover .tooltip{
+    opacity: 1 ;
+}
+
+/*.search-button .tooltip:hover{
+    opacity: 0;
+}
+This might also be used to disable the effect of hovering over the tooltip
+*/
+
 .search-icon{
     height: 25px;
-    margin-top: 4px;
 }
 
 .voice-search-button{
@@ -157,7 +214,6 @@ body{
 
 .voice-search-icon{
     height: 25px;
-    margin-top: 4px;
 }
 
 .right-section{
