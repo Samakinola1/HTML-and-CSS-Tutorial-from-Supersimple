@@ -7,7 +7,9 @@ p{
 body{
     margin: 0;
     padding-top: 80px;
-    padding-left: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
 }
 
 .thumbnail{
@@ -26,7 +28,7 @@ body{
     font-size: 14px;
     font-weight: bold;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .video-author{
@@ -46,12 +48,12 @@ body{
 }
 
 .profile-picture{
-    width: 40px;
+    width: 36px;
     border-radius: 20px;
 }
 
 .thumbnail-row{
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
 }
 
@@ -211,6 +213,31 @@ body{
     bottom: 0;
     top: 55px;
     width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    flex-direction: column; /*This allows us to display the sidebar vertically*/
+    justify-content: center; /*Horizontal centering*/
+    align-items: center; /*Vertical centering*/
+    cursor: pointer;
+}
+
+.sidebar-link:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
 }
 
 .home-icons{
