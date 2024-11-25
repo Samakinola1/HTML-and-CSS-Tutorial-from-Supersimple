@@ -134,6 +134,16 @@ then it reduces the row
     margin-right: 20px;
 }
 
+.menubar{
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menubar:hover{
+    background-color: rgb(235, 235, 235);
+}
+
 .youtube-logo{
     height: 20px;
 }
