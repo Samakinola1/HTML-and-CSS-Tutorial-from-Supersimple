@@ -121,6 +121,10 @@ then it reduces the row
     border-bottom-style: solid;
     border-bottom-color: rgb(228, 228, 228);
     z-index: 50;
+    /*
+    z-index is for 3d for bringng it front
+    to know which one comes first use order
+    */
 }
 
 .left-section{
